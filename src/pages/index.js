@@ -31,7 +31,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://docs.google.com/document/d/1AQYmT2S5uxbeZHvVpoiqOVeUCgVUR1ZRofuHcV34KwQ/edit"
+                  href="https://drive.google.com/file/d/1roCHz8xswLU6aKCfaEG0lRHDQnLZORVw/view?usp=sharing"
                 >
                   Resume
                 </a>
