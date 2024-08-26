@@ -27,11 +27,10 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">Portfolio</h1>
             <ul className="flex items-center">
-              
               <li>
                 <a
                   className="bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1roCHz8xswLU6aKCfaEG0lRHDQnLZORVw/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1eqA75FF55s8jDUKeQ3p_FMkTaul_A1wP/view?usp=drive_link"
                 >
                   Resume
                 </a>
@@ -56,7 +55,7 @@ export default function Home() {
               </p>
 
               <div className="text-5xl flex justify-center gap-16 py3 text-gray-600">
-              <a
+                <a
                   href="https://www.linkedin.com/in/agnes-dansowaa-odame/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -64,16 +63,14 @@ export default function Home() {
                 >
                   <AiFillLinkedin />
                 </a>
-              <a
+                <a
                   href="https://github.com/annice5"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" mt-2 inline-block"
                 >
-                  <AiFillGithub  />
+                  <AiFillGithub />
                 </a>
-                
-                
               </div>
             </div>
 
@@ -172,6 +169,90 @@ export default function Home() {
                 </p>
               </span>
             </motion.div>
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 0.2 },
+                ease: "easeIn",
+                // duration: 1
+              }}
+              className=" bg-teal-600 mt-10 rounded-[15px] shadow-2xl px-56 py-8 "
+              onClick={toggleExpansion}
+            >
+              <span
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.2 },
+                  ease: "easeIn",
+                  duration: 1,
+                }}
+              >
+                <h3 className="font-bold text-lg text-center text-black">
+                  Akenten Appiah Menkah University of Skills and Entreprenuerial
+                  Development
+                </h3>
+                <p className="text-lg font-semibold text-black ">
+                  Administrative Assistant
+                </p>
+                <p className="text-left ml-5 mt-3">
+                  Provided administrative support to healthcare professionals
+                  and staff. Managed front desk operations, including reception,
+                  phone calls and patient flow. Scheduled appointments and
+                  procedures.
+                </p>
+                <p className="text-sm text-gray-800 text-center mt-5 ">
+                  October 2021- January 2024
+                </p>
+              </span>
+            </motion.div>
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 0.2 },
+                ease: "easeIn",
+                // duration: 1
+              }}
+              className=" bg-teal-600 mt-10 rounded-[15px] shadow-2xl px-56 py-8 "
+              onClick={toggleExpansion}
+            >
+              <span
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.2 },
+                  ease: "easeIn",
+                  duration: 1,
+                }}
+              >
+                <h3 className="font-bold text-lg text-center text-black">
+                  Ghana Ports and Habour Authority
+                </h3>
+                <p className="text-lg font-semibold text-black ">
+                  IT Consultant
+                </p>
+                <p className="text-left ml-5 mt-3">
+                  Supported the implementation of new IT projects and
+                  initiatives. Provided technical support and troubleshooting for
+                  IT issues. Collaborated with IT team members to resolve complex
+                  technical problems. Participated in IT training and
+                  capacity-building programs.
+                </p>
+                <p className="text-sm text-gray-800 text-center mt-5 ">
+                Aug / 2019 - Sep / 2019
+                </p>
+              </span>
+            </motion.div>
           </div>
         </section>
 
@@ -213,10 +294,10 @@ export default function Home() {
                   <h4 className="font-semibold text-xl mb-2">
                     Web Development
                   </h4>
-                  <p className="text-gray-600 font-semibold">
-                    MEST Africa
+                  <p className="text-gray-600 font-semibold">MEST Africa</p>
+                  <p className="text-gray-600">
+                    Aluguntugui Street, East Legon
                   </p>
-                  <p className="text-gray-600">Aluguntugui Street, East Legon</p>
                   <span className="flex gap-1">
                     <p className="text-gray-600"> May / 2024</p>
                     <p className="text-gray-600">August/ 2024</p>
@@ -367,81 +448,75 @@ export default function Home() {
         </section>
 
         <section>
-        <h3 className="text-3xl py-1 mt-40">Projects</h3>
-            <div className=" overflow-hidden group mb-20 mt-40 transform hover:scale-105 transition-transform duration-300 mx-auto">
-              <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
-               <BsArrows className="size-10 text-white"/>
-                <h3 className="text-2xl font-semibold">
-                  HomeGlow House keeping
-                </h3>
-                <p className="mt-2">
-                  This is a website that connects those in need of sparkling
-                  spaces with trusted housekeeping professionals.
-                </p>
-                <p className="mt-1">MEST Instructors</p>
-                <p className="mt-1">MEST Africa</p>
-                <p className="mt-1">17/06/2024 - 21/06/2024</p>
-                <a
-                  href="https://homeglowhousekeeping.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
-                >
-                  View Project
-                </a>
-              </div>
+          <h3 className="text-3xl py-1 mt-40">Projects</h3>
+          <div className=" overflow-hidden group mb-20 mt-40 transform hover:scale-105 transition-transform duration-300 mx-auto">
+            <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
+              <BsArrows className="size-10 text-white" />
+              <h3 className="text-2xl font-semibold">HomeGlow House keeping</h3>
+              <p className="mt-2">
+                This is a website that connects those in need of sparkling
+                spaces with trusted housekeeping professionals.
+              </p>
+              <p className="mt-1">MEST Instructors</p>
+              <p className="mt-1">MEST Africa</p>
+              <p className="mt-1">17/06/2024 - 21/06/2024</p>
+              <a
+                href="https://homeglowhousekeeping.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+          <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
+            <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
+              <BsArrows className="size-10 text-white" />
+              <h3 className="text-2xl font-semibold">Fictional Haven</h3>
+              <p className="mt-2">
+                This is a website that has the best selling novels to purchase.
+              </p>
+              <p className="mt-1">MEST Instructors</p>
+              <p className="mt-1">MEST Africa</p>
+              <p className="mt-1">24/06/2024 - 28/06/2024</p>
+              <a
+                href="https://novel-landing-page.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+          <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
+            <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
+              <BsArrows className="size-10 text-white" />
+              <h3 className="text-2xl font-semibold">GoMingle Events</h3>
+              <p className="mt-2">
+                This is a website that shows upcoming events and helps in
+                booking the events.
+              </p>
+              <p className="mt-1">MEST Instructors</p>
+              <p className="mt-1">MEST Africa</p>
+              <p className="mt-1">02/07/2024 - 8/07/2024</p>
+              <a
+                href="https://gomingle.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
+              >
+                View Project
+              </a>
             </div>
             <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
               <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
-                <BsArrows className="size-10 text-white"/>
-                <h3 className="text-2xl font-semibold">
-                  Fictional Haven
-                </h3>
+                <BsArrows className="size-10 text-white" />
+                <h3 className="text-2xl font-semibold">Ticketty</h3>
                 <p className="mt-2">
-                  This is a website that has the best selling novels to purchase.
-                </p>
-                <p className="mt-1">MEST Instructors</p>
-                <p className="mt-1">MEST Africa</p>
-                <p className="mt-1">24/06/2024 - 28/06/2024</p>
-                <a
-                  href="https://novel-landing-page.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-            <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
-              <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
-                <BsArrows className="size-10 text-white"/>
-                <h3 className="text-2xl font-semibold">
-                  GoMingle Events
-                </h3>
-                <p className="mt-2">
-                  This is a website that shows upcoming events and helps in booking the events.
-                </p>
-                <p className="mt-1">MEST Instructors</p>
-                <p className="mt-1">MEST Africa</p>
-                <p className="mt-1">02/07/2024 - 8/07/2024</p>
-                <a
-                  href="https://gomingle.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
-                >
-                  View Project
-                </a>
-              </div>
-            <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
-              <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
-                <BsArrows className="size-10 text-white"/>
-                <h3 className="text-2xl font-semibold">
-                  Ticketty
-                </h3>
-                <p className="mt-2">
-                  This website helps you to book your ticket online whenever you are travelling by Bus.
+                  This website helps you to book your ticket online whenever you
+                  are travelling by Bus.
                 </p>
                 <p className="mt-1">MEST Instructors</p>
                 <p className="mt-1">MEST Africa</p>
