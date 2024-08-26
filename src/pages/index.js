@@ -31,7 +31,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1roCHz8xswLU6aKCfaEG0lRHDQnLZORVw/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1roCHz8xswLU6aKCfaEG0lRHDQnLZORVw/view?usp=drive_link"
                 >
                   Resume
                 </a>
@@ -367,8 +367,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
-          <h3 className="text-3xl py-1 mt-40">Projects</h3>
+        <h3 className="text-3xl py-1 mt-40">Projects</h3>
             <div className=" overflow-hidden group mb-20 mt-40 transform hover:scale-105 transition-transform duration-300 mx-auto">
               <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
                <BsArrows className="size-10 text-white"/>
