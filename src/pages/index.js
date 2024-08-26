@@ -435,6 +435,27 @@ export default function Home() {
                   View Project
                 </a>
               </div>
+            <div className=" overflow-hidden group mb-20 mt-12 transform hover:scale-105 transition-transform duration-300 mx-auto">
+              <div className="  bg-teal-200 rounded-full pb-5 shadow-lg  flex flex-col justify-center items-center text-center text-black ">
+                <BsArrows className="size-10 text-white"/>
+                <h3 className="text-2xl font-semibold">
+                  Ticketty
+                </h3>
+                <p className="mt-2">
+                  This website helps you to book your ticket online whenever you are travelling by Bus.
+                </p>
+                <p className="mt-1">MEST Instructors</p>
+                <p className="mt-1">MEST Africa</p>
+                <p className="mt-1">7/08/2024 - 22/08/2024</p>
+                <a
+                  href="https://ticketting.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-500 hover:text-teal-700 mt-2 inline-block"
+                >
+                  View Project
+                </a>
+              </div>
             </div>
           </div>
         </section>
